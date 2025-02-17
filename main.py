@@ -1,9 +1,10 @@
 """FastAPI main entrypoint file."""
 
+from services import TimezoneService
 from fastapi import FastAPI, Depends
 from typing import Annotated
 from models import TimeZones
-from services import TimezoneService
+
 
 app = FastAPI()
 
